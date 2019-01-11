@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <wines>
+    <wine>
+      <name>Midalidare Grand Vintage Malbec</name>
+      <type>малбек</type>
+      <producer>Мидалидаре</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Мидалидаре</package>
+      <price>100</price>
+      <sommelierDiscription color="Наситен тъмно пурпурен цвят."
+                            fragrance="Сложен и ефектен нос с нотки на зрели черница, череша, къпина и касис с черен шоколад, кафе и карамел с ванилия."
+                            body="Свежо, отлично структурирано в устата с плътно тяло"
+                            aftertaste=", велурени, зрели танини, с добре запазен плод и много дълъг, пикантен финал."/>
+      
+      <winary refid="a1"/>
+      
+      <image src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"/>
+    </wine>
+
+
+    <wine>
+      <name>Minkov Borthers Oak Tree</name>
+      <type>купаж</type>
+      <producer>Братя Минкови</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Братя Минкови</package>
+      <price>32</price>
+      <sommelierDiscription color="Плътен цвят - непрогледен гранат."
+                            fragrance="Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушка"
+                            body="Плътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест."
+                            aftertaste="Отлична дължина и благородство на финала на вкуса"/>
+      
+      <winary refid="a2"/>
+      <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+    </wine>
+
+    <wine>
+      <name>Midalidare Grande Cuvee</name>
+      <type>купаж</type>
+      <producer>Мидалидаре</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Мидалидаре</package>
+      <price>43</price>
+      <sommelierDiscription color="Мидалидаре"
+                            fragrance="Сочен нос с нотки на черни череши, какао и ликорис, ликьор от касис и сладки подправки."
+                            body="Гладко, но пищно тяло, обемно и сочно с фини, "
+                            aftertaste="зрели танини и дълъг, пикантен финал"/>
+      
+      <winary refid="a1"/>
+      <image src="https://assets.entrepreneur.com/content/16x9/822/20150909205144-red-wine-classy-evening-dinner.jpeg"/>
+    </wine>
+
+    <wine>
+      <name>Domaine Boyar Platinum Cabernet Sauvignon </name>
+      <type>каберне совиньон</type>
+      <producer>Домейн Бойар</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Домейн Бойар</package>
+      <price>24</price>
+      <sommelierDiscription color="Много плътен, пурпурен цвят."
+                            fragrance="Зрял, сочен, сортов и ефектен нос. Ще откриете добре различими плодови аромати на черни череши, къпини, сини сливи и френско грозде, заедно със съблазнителни ванилови тонове, карамел с масло и мока."
+                            body="В устата е гладко, стопено, с кадифени танини и добра структура."
+                            aftertaste="На финала - запазено плодово и сладко."/>
+      
+      <winary refid="a3"/>
+      <image src="http://wayburyinn.com/files/2012/06/wine-3.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Katarzyna Reserve</name>
+      <type>купаж</type>
+      <producer>Катаржина</producer>
+      <yearOfManufacture>2011</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Катаржина</package>
+      <price>100</price>
+      <sommelierDiscription color="Цветът е добре изрезен - гранат с меки отблясъци. "
+                            fragrance="Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки."
+                            body="Тялото е стегнато, плътно"
+                            aftertaste="и мощно с велурени танини и пикантен финал."/>
+      
+      <winary refid="a4"/>
+      <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Katarzyna Reserve</name>
+      <type>купаж</type>
+      <producer>Катаржина</producer>
+      <yearOfManufacture>2011</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Катаржина</package>
+      <price>100</price>
+      <sommelierDiscription color="Цветът е добре изрезен - гранат с меки отблясъци. "
+                            fragrance="Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки."
+                            body="Тялото е стегнато, плътно"
+                            aftertaste="и мощно с велурени танини и пикантен финал."/>
+      
+      <winary refid="a4"/>
+      <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Katarzyna Reserve</name>
+      <type>купаж</type>
+      <producer>Катаржина</producer>
+      <yearOfManufacture>2011</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Катаржина</package>
+      <price>100</price>
+      <sommelierDiscription color="Цветът е добре изрезен - гранат с меки отблясъци. "
+                            fragrance="Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки."
+                            body="Тялото е стегнато, плътно"
+                            aftertaste="и мощно с велурени танини и пикантен финал."/>
+      
+      <winary refid="a4"/>
+      <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Minkov Borthers Oak Tree</name>
+      <type>купаж</type>
+      <producer>Братя Минкови</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Братя Минкови</package>
+      <price>32</price>
+      <sommelierDiscription color="Плътен цвят - непрогледен гранат."
+                            fragrance="Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушка"
+                            body="Плътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест."
+                            aftertaste="Отлична дължина и благородство на финала на вкуса"/>
+      
+      <winary refid="a2"/>
+      <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+    </wine>
+
+    <wine>
+      <name>Midalidare Grand Vintage Malbec</name>
+      <type>малбек</type>
+      <producer>Мидалидаре</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Мидалидаре</package>
+      <price>100</price>
+      <sommelierDiscription color="Наситен тъмно пурпурен цвят."
+                            fragrance="Сложен и ефектен нос с нотки на зрели черница, череша, къпина и касис с черен шоколад, кафе и карамел с ванилия."
+                            body="Свежо, отлично структурирано в устата с плътно тяло"
+                            aftertaste=", велурени, зрели танини, с добре запазен плод и много дълъг, пикантен финал."/>
+      
+      <winary refid="a1"/>
+      <image src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"/>
+    </wine>
+
+    <wine>
+      <name>Minkov Borthers Oak Tree</name>
+      <type>купаж</type>
+      <producer>Братя Минкови</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Братя Минкови</package>
+      <price>32</price>
+      <sommelierDiscription color="Плътен цвят - непрогледен гранат."
+                            fragrance="Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушка"
+                            body="Плътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест."
+                            aftertaste="Отлична дължина и благородство на финала на вкуса"/>
+      
+      <winary refid="a2"/>
+      <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+    </wine>
+
+    <wine>
+      <name>Midalidare Grande Cuvee</name>
+      <type>купаж</type>
+      <producer>Мидалидаре</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Мидалидаре</package>
+      <price>43</price>
+      <sommelierDiscription color="Мидалидаре"
+                            fragrance="Сочен нос с нотки на черни череши, какао и ликорис, ликьор от касис и сладки подправки."
+                            body="Гладко, но пищно тяло, обемно и сочно с фини, "
+                            aftertaste="зрели танини и дълъг, пикантен финал"/>
+      
+      <winary refid="a1"/>
+      <image src="https://assets.entrepreneur.com/content/16x9/822/20150909205144-red-wine-classy-evening-dinner.jpeg"/>
+    </wine>
+
+    <wine>
+      <name>Domaine Boyar Platinum Cabernet Sauvignon </name>
+      <type>каберне совиньон</type>
+      <producer>Домейн Бойар</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Домейн Бойар</package>
+      <price>24</price>
+      <sommelierDiscription color="Много плътен, пурпурен цвят."
+                            fragrance="Зрял, сочен, сортов и ефектен нос. Ще откриете добре различими плодови аромати на черни череши, къпини, сини сливи и френско грозде, заедно със съблазнителни ванилови тонове, карамел с масло и мока."
+                            body="В устата е гладко, стопено, с кадифени танини и добра структура."
+                            aftertaste="На финала - запазено плодово и сладко."/>
+      
+      <winary refid="a3"/>
+      <image src="http://wayburyinn.com/files/2012/06/wine-3.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Katarzyna Reserve</name>
+      <type>купаж</type>
+      <producer>Катаржина</producer>
+      <yearOfManufacture>2011</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Катаржина</package>
+      <price>100</price>
+      <sommelierDiscription color="Цветът е добре изрезен - гранат с меки отблясъци. "
+                            fragrance="Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки."
+                            body="Тялото е стегнато, плътно"
+                            aftertaste="и мощно с велурени танини и пикантен финал."/>
+      
+      <winary refid="a4"/>
+      <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Katarzyna Reserve</name>
+      <type>купаж</type>
+      <producer>Катаржина</producer>
+      <yearOfManufacture>2011</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Катаржина</package>
+      <price>100</price>
+      <sommelierDiscription color="Цветът е добре изрезен - гранат с меки отблясъци. "
+                            fragrance="Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки."
+                            body="Тялото е стегнато, плътно"
+                            aftertaste="и мощно с велурени танини и пикантен финал."/>
+      
+      <winary refid="a4"/>
+      <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Katarzyna Reserve</name>
+      <type>купаж</type>
+      <producer>Катаржина</producer>
+      <yearOfManufacture>2011</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Катаржина</package>
+      <price>100</price>
+      <sommelierDiscription color="Цветът е добре изрезен - гранат с меки отблясъци. "
+                            fragrance="Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки."
+                            body="Тялото е стегнато, плътно"
+                            aftertaste="и мощно с велурени танини и пикантен финал."/>
+      
+      <winary refid="a4"/>
+      <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
+    </wine>
+
+    <wine>
+      <name>Minkov Borthers Oak Tree</name>
+      <type>купаж</type>
+      <producer>Братя Минкови</producer>
+      <yearOfManufacture>2013</yearOfManufacture>
+      <yearOfPackaging>2017</yearOfPackaging>
+      <package>Братя Минкови</package>
+      <price>32</price>
+      <sommelierDiscription color="Плътен цвят - непрогледен гранат."
+                            fragrance="Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушка"
+                            body="Плътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест."
+                            aftertaste="Отлична дължина и благородство на финала на вкуса"/>
+      
+      <winary refid="a2"/>
+      <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+    </wine>
+  </wines>
+
+
+
+
+
+
+
+
+  <wineries>
+    <winary id="a1">
+      <name>Мидалидаре</name>
+      <address>
+        <country>България</country>
+        <region>Тракийска низина</region>
+      </address>
+    </winary>
+
+    <winary id="a2">
+      <name>Братя Минкови</name>
+      <address>
+        <country>България</country>
+        <region>Тракийска низина</region>
+      </address>
+    </winary>
+
+    <winary id="a3">
+      <name>Домейн Бойар</name>
+      <address>
+        <country>България</country>
+        <region>Тракийска низина</region>
+      </address>
+    </winary>
+
+    <winary id="a4">
+      <name>Катаржина</name>
+      <address>
+        <country>България</country>
+        <region>Тракийска низина</region>
+      </address>
+    </winary>
+    
+  </wineries>
+
+</catalog>

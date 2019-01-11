@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--<xs:schema id="katalogVina"
+    targetNamespace="http://tempuri.org/katalogVina.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/katalogVina.xsd"
+    xmlns:mstns="http://tempuri.org/katalogVina.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>-->
+
+
+
+  <xs:element name="university">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="type" type="xs:string"/>
+        <xs:element name="dean" type="xs:string"/>
+        <xs:element name="yearOfEstablishment">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="1500"/>
+              <xs:maxInclusive value="2020"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="academicStaff">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="10"/>
+              <xs:maxInclusive value="5000"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="students">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="10"/>
+              <xs:maxInclusive value="50000"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="location" type="xs:string"/>
+        <xs:element name="website" type="xs:integer"/>
+
+        <!--<xs:element ref="winary"/>-->
+        <xs:element name="affiliate">
+          <xs:complexType>
+            <xs:attribute name="refid" type="xs:IDREF"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="image">
+          <xs:complexType>
+            <xs:attribute name="src" type="xs:anyURI"/>
+          </xs:complexType>
+        </xs:element>
+        
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- <xs:attributeGroup name="discriptionAttributes">
+    <xs:attribute name="color" type="xs:string"/>
+    <xs:attribute name="fragrance" type="xs:string"/>
+    <xs:attribute name="body" type="xs:string"/>
+    <xs:attribute name="aftertaste" type="xs:string"/>
+  </xs:attributeGroup> -->
+
+
+
+  <xs:element name="catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="universities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="university"  maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <xs:element name="affiliates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="affiliate"  maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:key name="PK_Affiliate">
+      <xs:selector xpath="./affiliates/affiliate"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+    <xs:keyref name="FK_Affiliate" refer="PK_Affiliate">
+      <xs:selector xpath="./universities/university/affiliate"/>
+      <xs:field xpath="@refid"/>
+    </xs:keyref>
+  </xs:element>
+
+
+  <xs:element name="affiliate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name"/>
+        <xs:element name="address">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="region"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <!--<xs:attribute name="id" type="xs:string" use="required"/>-->
+      <xs:attribute name="id" type="xs:ID"/>
+      <!--<xs:attribute name="refid" type="xs:IDREF"/>-->
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>
