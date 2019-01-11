@@ -68,7 +68,7 @@
                   <xsl:value-of select="students"/>
                 </td>
                 <td>
-                  <xsl:value-of select="price"/>
+                  <xsl:value-of select="location"/>
                 </td>
                 <!-- <td>
                   <p>
