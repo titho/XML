@@ -45,7 +45,7 @@
         <xs:element name="website" type="xs:integer"/>
 
         <!--<xs:element ref="winary"/>-->
-        <xs:element name="affiliate">
+        <xs:element name="region">
           <xs:complexType>
             <xs:attribute name="refid" type="xs:IDREF"/>
           </xs:complexType>
@@ -82,28 +82,28 @@
         </xs:element>
 
 
-        <xs:element name="affiliates">
+        <xs:element name="regions">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="affiliate"  maxOccurs="unbounded"/>
+              <xs:element ref="region"  maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
     
-    <xs:key name="PK_Affiliate">
-      <xs:selector xpath="./affiliates/affiliate"/>
+    <xs:key name="PK_Region">
+      <xs:selector xpath="./regions/region"/>
       <xs:field xpath="@id"/>
     </xs:key>
-    <xs:keyref name="FK_Affiliate" refer="PK_Affiliate">
-      <xs:selector xpath="./universities/university/affiliate"/>
+    <xs:keyref name="FK_Region" refer="PK_Region">
+      <xs:selector xpath="./universities/university/region"/>
       <xs:field xpath="@refid"/>
     </xs:keyref>
   </xs:element>
 
 
-  <xs:element name="affiliate">
+  <xs:element name="region">
    <xs:complexType>
       <xs:sequence>
         <xs:element name="name"/>
@@ -111,7 +111,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="country"/>
-              <xs:element name="region"/>
+              <xs:element name="domain"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

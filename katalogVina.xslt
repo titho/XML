@@ -4,7 +4,7 @@
 >
   <xsl:output method="html" indent="yes"/>
   
-  <xsl:key name="affiliate-search" match="affiliate" use="@id"/>
+  <xsl:key name="region-search" match="region" use="@id"/>
   <xsl:template match="/catalog">
     <html>
       <head>
@@ -15,8 +15,8 @@
       <body>
         <button onclick="sortTable(0)">Sort By Name</button>
         <button onclick="sortTable(1)">Sort By Type</button>
-        <button onclick="sortTable(3)">Sort By year of establisment</button>
-        <button onclick="sortTable(5)">Sort By students</button>
+        <button onclick="sortTable(3)">Sort By Year Of Establisment</button>
+        <button onclick="sortTable(5)">Sort By Students</button>
 
         <select id="typeOnSorting">
           <option value="descending">Descending</option>
@@ -30,7 +30,7 @@
               <th>Name</th>
               <th>Type</th>
               <th>Dean</th>
-              <th>Year of establisment</th>
+              <th>Year Of Establisment</th>
               <th>Academic Staff</th>
               <th>Students</th>
               <th>Location</th>
@@ -79,9 +79,9 @@
                   </p>
                 </td> -->
                 <td>
-                  <xsl:value-of select="key('winary-search', winary/@refid)/address/country"/>,                
-                  <xsl:value-of select="key('affiliate-search', affiliate/@refid)/address/region"/>,
-                  <xsl:value-of select="key('affiliate-search', affiliate/@refid)/name"/>,
+                  <xsl:value-of select="key('region-search', region/@refid)/address/country"/>,                
+                  <xsl:value-of select="key('region-search', region/@refid)/address/domain"/>,
+                  <xsl:value-of select="key('region-search', region/@refid)/name"/>,
                 </td>
                 <td>
                   <img>
@@ -106,7 +106,7 @@
             </tr>
           </thead>
           <tbody>
-            <xsl:for-each select="./affiliates/affiliate">
+            <xsl:for-each select="./regions/region">
               <xsl:sort select="Name"/>
 
               <xsl:element name="tr">
@@ -123,7 +123,7 @@
                   <xsl:value-of select="address/country"/>
                 </td>
                 <td>
-                  <xsl:value-of select="address/region"/>
+                  <xsl:value-of select="address/domain"/>
                 </td>
               </xsl:element>
             </xsl:for-each>

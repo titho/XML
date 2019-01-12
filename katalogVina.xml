@@ -9,7 +9,7 @@
       <academicStaff>1500</academicStaff>
       <students>25000</students>
       <location>София</location>
-      <affiliate refid="a1"/>
+      <region refid="a1"/>
       
       <image src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"/>
     </university>
@@ -23,7 +23,7 @@
       <academicStaff>1950</academicStaff>
       <students>10000</students>
       <location>София</location>
-      <affiliate refid="a2"/>
+      <region refid="a2"/>
       <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
     </university>
 
@@ -35,7 +35,7 @@
       <academicStaff>219</academicStaff>
       <students>780</students>
       <location>Пловдив</location>
-     <affiliate refid="a1"/>
+     <region refid="a2"/>
       <image src="https://assets.entrepreneur.com/content/16x9/822/20150909205144-red-wine-classy-evening-dinner.jpeg"/>
     </university>
 
@@ -47,7 +47,7 @@
       <academicStaff>150</academicStaff>
       <students>1500</students>
       <location>София</location>
-     <affiliate refid="a3"/>
+     <region refid="a3"/>
       <image src="http://wayburyinn.com/files/2012/06/wine-3.jpg"></image>
     </university>
 
@@ -59,7 +59,7 @@
       <academicStaff>168</academicStaff>
       <students>7500</students>
       <location>Бургас</location>
-     <affiliate refid="a4"/>
+     <region refid="a3"/>
       <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
     </university>
 
@@ -71,7 +71,7 @@
       <academicStaff>1290</academicStaff>
       <students>18902</students>
       <location>София</location>
-      <affiliate refid="a4"/>
+      <region refid="a1"/>
       <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
     </university>
 
@@ -83,7 +83,7 @@
       <academicStaff>460</academicStaff>
       <students>18000</students>
       <location>София</location>
-      <affiliate refid="a4"/>
+      <region refid="a1"/>
       <image src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></image>
     </university>
 
@@ -95,7 +95,7 @@
       <academicStaff>1969</academicStaff>
       <students>8311</students>
       <location>София</location>
-     <affiliate refid="a2"/>
+     <region refid="a1"/>
       <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
     </university>
 
@@ -107,7 +107,7 @@
       <academicStaff>550</academicStaff>
       <students>16700</students>
       <location>Пловдив</location>
-     <affiliate refid="a1"/>
+     <region refid="a2"/>
       <image src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"/>
     </university>
 
@@ -119,51 +119,44 @@
       <academicStaff>70</academicStaff>
       <students>1000</students>
       <location>Благоевград</location>
-     <affiliate refid="a2"/>
+     <region refid="a1"/>
       <image src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
     </university>
   </universities>
 
-
-
-
-
-
-
-
-  <affiliates>
-    <affiliate id="a1">
-      <name>Мидалидаре</name>
+  <regions>
+    <region id="a1">
+      <name>Северозападен</name>
       <address>
         <country>България</country>
-        <region>Тракийска низина</region>
+        <domain>Софийска</domain>
       </address>
-    </affiliate>
+    </region>
 
-    <affiliate id="a2">
-      <name>Братя Минкови</name>
+    <region id="a2">
+      <name>Югозападен</name>
       <address>
         <country>България</country>
-        <region>Тракийска низина</region>
+        <domain>Пловдивска</domain>
       </address>
-    </affiliate>
+    </region>
 
-    <affiliate id="a3">
-      <name>Домейн Бойар</name>
+    <region id="a3">
+      <name>Югоизточен</name>
       <address>
         <country>България</country>
-        <region>Тракийска низина</region>
+        <domain>Бургаска</domain>
       </address>
-    </affiliate>
+    </region>
 
-    <affiliate id="a4">
+    <!-- <region id="a4">
       <name>Катаржина</name>
       <address>
         <country>България</country>
-        <region>Тракийска низина</region>
+        <domain>Тракийска низина</domain>
       </address>
-    </affiliate>
+    </region> -->
     
-  </affiliates>
+  </regions>
 
 </catalog>
