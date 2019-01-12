@@ -1,329 +1,220 @@
-﻿<html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Wines</title>
-    <link rel="stylesheet" type="text/css" href="style.css"><script src="script.js"></script></head>
-  <body><button onclick="sortTable(0)">Sort By Name</button><button onclick="sortTable(2)">Sort By Producer</button><button onclick="sortTable(3)">Sort By year of manufacture</button><button onclick="sortTable(4)">Sort By year of packaging</button><button onclick="sortTable(6)">Sort By price</button><select id="typeOnSorting"><option value="descending">Descending</option>
-      <option value="ascending">Ascending</option></select><table border="1" id="wines">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Producer</th>
-          <th>Year of manufacture</th>
-          <th>Year of packaging</th>
-          <th>Package</th>
-          <th>Price</th>
-          <th>Sommelier Discription</th>
-          <th>Address</th>
-          <th>Image</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr bgColor="whiteblue">
-          <td>Katarzyna Reserve</td>
-          <td>купаж</td>
-          <td>Катаржина</td>
-          <td>2011</td>
-          <td>2017</td>
-          <td>Катаржина</td>
-          <td>100</td>
-          <td>
-            <p>Цветът е добре изрезен - гранат с меки отблясъци. Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки.Тялото е стегнато, плътнои мощно с велурени танини и пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Катаржина,
+<html>
+   <head>
+      <title>Universities</title>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <button onclick="sortTable(0)">Sort By Name</button>
+      <button onclick="sortTable(1)">Sort By Type</button>
+      <button onclick="sortTable(3)">Sort By Year Of Establisment</button>
+      <button onclick="sortTable(5)">Sort By Students</button>
+      <select id="typeOnSorting">
+         <option value="descending">Descending</option>
+         <option value="ascending">Ascending</option>
+      </select>
+      <table border="1" id="universities">
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Type</th>
+               <th>Dean</th>
+               <th>Year Of Establisment</th>
+               <th>Academic Staff</th>
+               <th>Students</th>
+               <th>Location</th>
+               <th>Students</th>
+               <th>Image</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr bgColor="whiteblue">
+               <td>Софийският университет „Св. Климент Охридски“</td>
+               <td>Държавен</td>
+               <td>проф. дфн Анастас Герджиков</td>
+               <td>1888</td>
+               <td>1500</td>
+               <td>25000</td>
+               <td>София</td>
+               <td>България,                
+                  Софийска,
+                  Северозападен,
                 </td>
-          <td><img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Katarzyna Reserve</td>
-          <td>купаж</td>
-          <td>Катаржина</td>
-          <td>2011</td>
-          <td>2017</td>
-          <td>Катаржина</td>
-          <td>100</td>
-          <td>
-            <p>Цветът е добре изрезен - гранат с меки отблясъци. Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки.Тялото е стегнато, плътнои мощно с велурени танини и пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Катаржина,
+               <td>
+                  <img src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"/>
+               </td>
+            </tr>
+            <tr bgColor="##1abc9c">
+               <td>Университет за национално и световно стопанство</td>
+               <td>Държавен</td>
+               <td>проф. д.ик.н. Стати Статев</td>
+               <td>1920</td>
+               <td>1290</td>
+               <td>18902</td>
+               <td>София</td>
+               <td>България,                
+                  Софийска,
+                  Северозападен,
                 </td>
-          <td><img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Katarzyna Reserve</td>
-          <td>купаж</td>
-          <td>Катаржина</td>
-          <td>2011</td>
-          <td>2017</td>
-          <td>Катаржина</td>
-          <td>100</td>
-          <td>
-            <p>Цветът е добре изрезен - гранат с меки отблясъци. Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки.Тялото е стегнато, плътнои мощно с велурени танини и пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Катаржина,
+               <td>
+                  <img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"/>
+               </td>
+            </tr>
+            <tr bgColor="whiteblue">
+               <td>Аграрният университет</td>
+               <td>Държавен</td>
+               <td>проф. д-р Христина Янчева</td>
+               <td>1945</td>
+               <td>219</td>
+               <td>780</td>
+               <td>Пловдив</td>
+               <td>България,                
+                  Пловдивска,
+                  Югозападен,
                 </td>
-          <td><img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Katarzyna Reserve</td>
-          <td>купаж</td>
-          <td>Катаржина</td>
-          <td>2011</td>
-          <td>2017</td>
-          <td>Катаржина</td>
-          <td>100</td>
-          <td>
-            <p>Цветът е добре изрезен - гранат с меки отблясъци. Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки.Тялото е стегнато, плътнои мощно с велурени танини и пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Катаржина,
+               <td>
+                  <img src="https://assets.entrepreneur.com/content/16x9/822/20150909205144-red-wine-classy-evening-dinner.jpeg"/>
+               </td>
+            </tr>
+            <tr bgColor="##1abc9c">
+               <td>Технически университет </td>
+               <td>Държавен</td>
+               <td>проф. дтн. Георги Михов</td>
+               <td>1945</td>
+               <td>460</td>
+               <td>18000</td>
+               <td>София</td>
+               <td>България,                
+                  Софийска,
+                  Северозападен,
                 </td>
-          <td><img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Katarzyna Reserve</td>
-          <td>купаж</td>
-          <td>Катаржина</td>
-          <td>2011</td>
-          <td>2017</td>
-          <td>Катаржина</td>
-          <td>100</td>
-          <td>
-            <p>Цветът е добре изрезен - гранат с меки отблясъци. Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки.Тялото е стегнато, плътнои мощно с велурени танини и пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Катаржина,
+               <td>
+                  <img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"/>
+               </td>
+            </tr>
+            <tr bgColor="whiteblue">
+               <td>Медицински университет </td>
+               <td>Държавен</td>
+               <td>проф. д-р Виктор Златков</td>
+               <td>1950</td>
+               <td>1969</td>
+               <td>8311</td>
+               <td>София</td>
+               <td>България,                
+                  Софийска,
+                  Северозападен,
                 </td>
-          <td><img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Katarzyna Reserve</td>
-          <td>купаж</td>
-          <td>Катаржина</td>
-          <td>2011</td>
-          <td>2017</td>
-          <td>Катаржина</td>
-          <td>100</td>
-          <td>
-            <p>Цветът е добре изрезен - гранат с меки отблясъци. Носът е дълбок, въздействащ, сложен и елегантен. Долавят се леки минерални нотки на мъх и пръст, черна маслина, кожа, печени черни плодове с карамел и ефирни парфюмени нотки.Тялото е стегнато, плътнои мощно с велурени танини и пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Катаржина,
+               <td>
+                  <img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+               </td>
+            </tr>
+            <tr bgColor="##1abc9c">
+               <td>Лесотехническият университет</td>
+               <td>Държавен</td>
+               <td>Проф. д-р Иван Илиев</td>
+               <td>1953</td>
+               <td>150</td>
+               <td>1500</td>
+               <td>София</td>
+               <td>България,                
+                  Бургаска,
+                  Югоизточен,
                 </td>
-          <td><img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Midalidare Grand Vintage Malbec</td>
-          <td>малбек</td>
-          <td>Мидалидаре</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Мидалидаре</td>
-          <td>100</td>
-          <td>
-            <p>Наситен тъмно пурпурен цвят.Сложен и ефектен нос с нотки на зрели черница, череша, къпина и касис с черен шоколад, кафе и карамел с ванилия.Свежо, отлично структурирано в устата с плътно тяло, велурени, зрели танини, с добре запазен плод и много дълъг, пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Мидалидаре,
+               <td>
+                  <img src="http://wayburyinn.com/files/2012/06/wine-3.jpg"/>
+               </td>
+            </tr>
+            <tr bgColor="whiteblue">
+               <td>Пловдивски университет</td>
+               <td>Държавен</td>
+               <td>проф. Запрян Козлуджов</td>
+               <td>1962</td>
+               <td>550</td>
+               <td>16700</td>
+               <td>Пловдив</td>
+               <td>България,                
+                  Пловдивска,
+                  Югозападен,
                 </td>
-          <td><img src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Minkov Borthers Oak Tree</td>
-          <td>купаж</td>
-          <td>Братя Минкови</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Братя Минкови</td>
-          <td>32</td>
-          <td>
-            <p>Плътен цвят - непрогледен гранат.Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушкаПлътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест.Отлична дължина и благородство на финала на вкуса</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Братя Минкови,
+               <td>
+                  <img src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"/>
+               </td>
+            </tr>
+            <tr bgColor="##1abc9c">
+               <td>Нов български университет</td>
+               <td>Частен</td>
+               <td>Проф. д-р Пламен Бочков</td>
+               <td>1991</td>
+               <td>1950</td>
+               <td>10000</td>
+               <td>София</td>
+               <td>България,                
+                  Пловдивска,
+                  Югозападен,
                 </td>
-          <td><img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Midalidare Grande Cuvee</td>
-          <td>купаж</td>
-          <td>Мидалидаре</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Мидалидаре</td>
-          <td>43</td>
-          <td>
-            <p>МидалидареСочен нос с нотки на черни череши, какао и ликорис, ликьор от касис и сладки подправки.Гладко, но пищно тяло, обемно и сочно с фини, зрели танини и дълъг, пикантен финал</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Мидалидаре,
+               <td>
+                  <img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+               </td>
+            </tr>
+            <tr bgColor="whiteblue">
+               <td>Бургаският свободен университет</td>
+               <td>Частен</td>
+               <td>Петко Чобанов</td>
+               <td>1991</td>
+               <td>168</td>
+               <td>7500</td>
+               <td>Бургас</td>
+               <td>България,                
+                  Бургаска,
+                  Югоизточен,
                 </td>
-          <td><img src="https://assets.entrepreneur.com/content/16x9/822/20150909205144-red-wine-classy-evening-dinner.jpeg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Domaine Boyar Platinum Cabernet Sauvignon </td>
-          <td>каберне совиньон</td>
-          <td>Домейн Бойар</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Домейн Бойар</td>
-          <td>24</td>
-          <td>
-            <p>Много плътен, пурпурен цвят.Зрял, сочен, сортов и ефектен нос. Ще откриете добре различими плодови аромати на черни череши, къпини, сини сливи и френско грозде, заедно със съблазнителни ванилови тонове, карамел с масло и мока.В устата е гладко, стопено, с кадифени танини и добра структура.На финала - запазено плодово и сладко.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Домейн Бойар,
+               <td>
+                  <img src="http://img1.sunset.timeinc.net/sites/default/files/image/2008/04/wine-bottles-m-x.jpg"/>
+               </td>
+            </tr>
+            <tr bgColor="##1abc9c">
+               <td>Американски университет в България</td>
+               <td>Частен</td>
+               <td>д-р Стивън Съливан</td>
+               <td>1991</td>
+               <td>70</td>
+               <td>1000</td>
+               <td>Благоевград</td>
+               <td>България,                
+                  Софийска,
+                  Северозападен,
                 </td>
-          <td><img src="http://wayburyinn.com/files/2012/06/wine-3.jpg"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Minkov Borthers Oak Tree</td>
-          <td>купаж</td>
-          <td>Братя Минкови</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Братя Минкови</td>
-          <td>32</td>
-          <td>
-            <p>Плътен цвят - непрогледен гранат.Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушкаПлътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест.Отлична дължина и благородство на финала на вкуса</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Братя Минкови,
-                </td>
-          <td><img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Midalidare Grand Vintage Malbec</td>
-          <td>малбек</td>
-          <td>Мидалидаре</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Мидалидаре</td>
-          <td>100</td>
-          <td>
-            <p>Наситен тъмно пурпурен цвят.Сложен и ефектен нос с нотки на зрели черница, череша, къпина и касис с черен шоколад, кафе и карамел с ванилия.Свежо, отлично структурирано в устата с плътно тяло, велурени, зрели танини, с добре запазен плод и много дълъг, пикантен финал.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Мидалидаре,
-                </td>
-          <td><img src="https://static1.squarespace.com/static/50b3b799e4b01c11f0f37ec5/t/5803b017e6f2e133b164bfc7/1476636700725/wine.jpg?format=original"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Minkov Borthers Oak Tree</td>
-          <td>купаж</td>
-          <td>Братя Минкови</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Братя Минкови</td>
-          <td>32</td>
-          <td>
-            <p>Плътен цвят - непрогледен гранат.Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушкаПлътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест.Отлична дължина и благородство на финала на вкуса</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Братя Минкови,
-                </td>
-          <td><img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Midalidare Grande Cuvee</td>
-          <td>купаж</td>
-          <td>Мидалидаре</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Мидалидаре</td>
-          <td>43</td>
-          <td>
-            <p>МидалидареСочен нос с нотки на черни череши, какао и ликорис, ликьор от касис и сладки подправки.Гладко, но пищно тяло, обемно и сочно с фини, зрели танини и дълъг, пикантен финал</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Мидалидаре,
-                </td>
-          <td><img src="https://assets.entrepreneur.com/content/16x9/822/20150909205144-red-wine-classy-evening-dinner.jpeg"></td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Domaine Boyar Platinum Cabernet Sauvignon </td>
-          <td>каберне совиньон</td>
-          <td>Домейн Бойар</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Домейн Бойар</td>
-          <td>24</td>
-          <td>
-            <p>Много плътен, пурпурен цвят.Зрял, сочен, сортов и ефектен нос. Ще откриете добре различими плодови аромати на черни череши, къпини, сини сливи и френско грозде, заедно със съблазнителни ванилови тонове, карамел с масло и мока.В устата е гладко, стопено, с кадифени танини и добра структура.На финала - запазено плодово и сладко.</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Домейн Бойар,
-                </td>
-          <td><img src="http://wayburyinn.com/files/2012/06/wine-3.jpg"></td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Minkov Borthers Oak Tree</td>
-          <td>купаж</td>
-          <td>Братя Минкови</td>
-          <td>2013</td>
-          <td>2017</td>
-          <td>Братя Минкови</td>
-          <td>32</td>
-          <td>
-            <p>Плътен цвят - непрогледен гранат.Носът е благороден, сложен и дълбок с нотки на зрели черни плодове, сладки подправки, землисти нотки на мъх и папрат, какао, мента и печена червена чушкаПлътно тяло с фини, леко зърнисти танини и много добре запазена плодова свежест.Отлична дължина и благородство на финала на вкуса</p>
-          </td>
-          <td>България,
-                  Тракийска низина,
-                  Братя Минкови,
-                </td>
-          <td><img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"></td>
-        </tr>
-      </tbody>
-    </table>
-    <table border="1" id="wines">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Country</th>
-          <th>Region</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr bgColor="whiteblue">
-          <td>Мидалидаре</td>
-          <td>България</td>
-          <td>Тракийска низина</td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Братя Минкови</td>
-          <td>България</td>
-          <td>Тракийска низина</td>
-        </tr>
-        <tr bgColor="whiteblue">
-          <td>Домейн Бойар</td>
-          <td>България</td>
-          <td>Тракийска низина</td>
-        </tr>
-        <tr bgColor="##1abc9c">
-          <td>Катаржина</td>
-          <td>България</td>
-          <td>Тракийска низина</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+               <td>
+                  <img src="http://healthwayri.com/wp-content/uploads/red-wine-large.jpg"/>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table border="1" id="universities">
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Country</th>
+               <th>Region</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr bgColor="whiteblue">
+               <td>Северозападен</td>
+               <td>България</td>
+               <td>Софийска</td>
+            </tr>
+            <tr bgColor="##1abc9c">
+               <td>Югозападен</td>
+               <td>България</td>
+               <td>Пловдивска</td>
+            </tr>
+            <tr bgColor="whiteblue">
+               <td>Югоизточен</td>
+               <td>България</td>
+               <td>Бургаска</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
 </html>
