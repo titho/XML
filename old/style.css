@@ -1,0 +1,28 @@
+﻿body {
+    background-color: rgb(26, 188, 156);
+}
+img {
+    width:150px;
+    height:100px;
+}
+
+button {
+    margin: 15px 15px 15px 15px;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th {
+    height: 50px;
+}
+
+
+

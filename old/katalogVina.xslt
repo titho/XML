@@ -4,43 +4,45 @@
 >
   <xsl:output method="html" indent="yes"/>
   
-  <xsl:key name="affiliate-search" match="affiliate" use="@id"/>
+  <xsl:key name="winary-search" match="winary" use="@id"/>
   <xsl:template match="/catalog">
     <html>
       <head>
-        <title>Universities</title>
+        <title>Wines</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <script src="script.js"></script>
       </head>
       <body>
         <button onclick="sortTable(0)">Sort By Name</button>
-        <button onclick="sortTable(1)">Sort By Type</button>
-        <button onclick="sortTable(3)">Sort By year of establisment</button>
-        <button onclick="sortTable(5)">Sort By students</button>
+        <button onclick="sortTable(2)">Sort By Producer</button>
+        <button onclick="sortTable(3)">Sort By year of manufacture</button>
+        <button onclick="sortTable(4)">Sort By year of packaging</button>
+        <button onclick="sortTable(6)">Sort By price</button>
 
         <select id="typeOnSorting">
           <option value="descending">Descending</option>
           <option value="ascending">Ascending</option>
         </select>
 
-        <table border="1" id="universities" >
+        <table border="1" id="wines" >
 
           <thead>
             <tr>
               <th>Name</th>
               <th>Type</th>
-              <th>Dean</th>
-              <th>Year of establisment</th>
-              <th>Academic Staff</th>
-              <th>Students</th>
-              <th>Location</th>
-              <th>Students</th>
+              <th>Producer</th>
+              <th>Year of manufacture</th>
+              <th>Year of packaging</th>
+              <th>Package</th>
+              <th>Price</th>
+              <th>Sommelier Discription</th>
+              <th>Address</th>
               <th>Image</th>
             </tr>
           </thead>
           <tbody>
-            <xsl:for-each select="./universities/university">
-              <xsl:sort select="yearOfEstablishment"/>
+            <xsl:for-each select="./wines/wine">
+              <xsl:sort select="yearOfManufacture"/>
 
               <xsl:element name="tr">
                 <xsl:if test="((position() mod 2) &gt; 0)">
@@ -56,32 +58,32 @@
                   <xsl:value-of select="type"/>
                 </td>
                 <td>
-                  <xsl:value-of select="dean"/>
+                  <xsl:value-of select="producer"/>
                 </td>
                 <td>
-                  <xsl:value-of select="yearOfEstablishment"/>
+                  <xsl:value-of select="yearOfManufacture"/>
                 </td>
                 <td>
-                  <xsl:value-of select="academicStaff"/>
+                  <xsl:value-of select="yearOfPackaging"/>
                 </td>
                 <td>
-                  <xsl:value-of select="students"/>
+                  <xsl:value-of select="package"/>
                 </td>
                 <td>
                   <xsl:value-of select="price"/>
                 </td>
-                <!-- <td>
+                <td>
                   <p>
                     <xsl:value-of select="sommelierDiscription/@color"/>
                     <xsl:value-of select="sommelierDiscription/@fragrance"/>
                     <xsl:value-of select="sommelierDiscription/@body"/>
                     <xsl:value-of select="sommelierDiscription/@aftertaste"/>
                   </p>
-                </td> -->
+                </td>
                 <td>
-                  <xsl:value-of select="key('winary-search', winary/@refid)/address/country"/>,                
-                  <xsl:value-of select="key('affiliate-search', affiliate/@refid)/address/region"/>,
-                  <xsl:value-of select="key('affiliate-search', affiliate/@refid)/name"/>,
+                  <xsl:value-of select="key('winary-search', winary/@refid)/address/country"/>,
+                  <xsl:value-of select="key('winary-search', winary/@refid)/address/region"/>,
+                  <xsl:value-of select="key('winary-search', winary/@refid)/name"/>,
                 </td>
                 <td>
                   <img>
@@ -96,7 +98,7 @@
         </table>
 
 
-        <table border="1" id="universities" >
+        <table border="1" id="wines" >
 
           <thead>
             <tr>
@@ -106,7 +108,7 @@
             </tr>
           </thead>
           <tbody>
-            <xsl:for-each select="./affiliates/affiliate">
+            <xsl:for-each select="./wineries/winary">
               <xsl:sort select="Name"/>
 
               <xsl:element name="tr">

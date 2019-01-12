@@ -11,13 +11,13 @@
 
 
 
-  <xs:element name="university">
+  <xs:element name="wine">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="name" type="xs:string"/>
         <xs:element name="type" type="xs:string"/>
-        <xs:element name="dean" type="xs:string"/>
-        <xs:element name="yearOfEstablishment">
+        <xs:element name="producer" type="xs:string"/>
+        <xs:element name="yearOfManufacture">
           <xs:simpleType>
             <xs:restriction base="xs:integer">
               <xs:minInclusive value="1500"/>
@@ -25,27 +25,25 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="academicStaff">
+        <xs:element name="yearOfPackaging">
           <xs:simpleType>
             <xs:restriction base="xs:integer">
-              <xs:minInclusive value="10"/>
-              <xs:maxInclusive value="5000"/>
+              <xs:minInclusive value="1500"/>
+              <xs:maxInclusive value="2020"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="students">
-          <xs:simpleType>
-            <xs:restriction base="xs:integer">
-              <xs:minInclusive value="10"/>
-              <xs:maxInclusive value="50000"/>
-            </xs:restriction>
-          </xs:simpleType>
+        <xs:element name="package" type="xs:string"/>
+        <xs:element name="price" type="xs:integer"/>
+
+        <xs:element name ="sommelierDiscription">
+          <xs:complexType>
+            <xs:attributeGroup ref="discriptionAttributes"/>
+          </xs:complexType>
         </xs:element>
-        <xs:element name="location" type="xs:string"/>
-        <xs:element name="website" type="xs:integer"/>
 
         <!--<xs:element ref="winary"/>-->
-        <xs:element name="affiliate">
+        <xs:element name="winary">
           <xs:complexType>
             <xs:attribute name="refid" type="xs:IDREF"/>
           </xs:complexType>
@@ -61,50 +59,50 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- <xs:attributeGroup name="discriptionAttributes">
+  <xs:attributeGroup name="discriptionAttributes">
     <xs:attribute name="color" type="xs:string"/>
     <xs:attribute name="fragrance" type="xs:string"/>
     <xs:attribute name="body" type="xs:string"/>
     <xs:attribute name="aftertaste" type="xs:string"/>
-  </xs:attributeGroup> -->
+  </xs:attributeGroup>
 
 
 
   <xs:element name="catalog">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="universities">
+        <xs:element name="wines">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="university"  maxOccurs="unbounded"/>
+              <xs:element ref="wine"  maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
 
 
-        <xs:element name="affiliates">
+        <xs:element name="wineries">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="affiliate"  maxOccurs="unbounded"/>
+              <xs:element ref="winary"  maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
     
-    <xs:key name="PK_Affiliate">
-      <xs:selector xpath="./affiliates/affiliate"/>
+    <xs:key name="PK_Winary">
+      <xs:selector xpath="./wineries/winary"/>
       <xs:field xpath="@id"/>
     </xs:key>
-    <xs:keyref name="FK_Affiliate" refer="PK_Affiliate">
-      <xs:selector xpath="./universities/university/affiliate"/>
+    <xs:keyref name="FK_Winary" refer="PK_Winary">
+      <xs:selector xpath="./wines/wine/winary"/>
       <xs:field xpath="@refid"/>
     </xs:keyref>
   </xs:element>
 
 
-  <xs:element name="affiliate">
-   <xs:complexType>
+  <xs:element name="winary">
+    <xs:complexType>
       <xs:sequence>
         <xs:element name="name"/>
         <xs:element name="address">
