@@ -6,7 +6,7 @@ function sortTable(col, reverse) {
         reverse = -1;
     else reverse = 1;
 
-    var table = document.getElementById("wines")
+    var table = document.getElementById("universities")
     var tb = table.tBodies[0],
         tr = Array.prototype.slice.call(tb.rows, 0),
         i;
