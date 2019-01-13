@@ -34,7 +34,7 @@
               <th>Academic Staff</th>
               <th>Students</th>
               <th>Location</th>
-              <th>Students</th>
+              <th>Region</th>
               <th>Image</th>
             </tr>
           </thead>
